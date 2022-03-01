@@ -1,0 +1,598 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./img/logo-icon.png">
+    <title>GuitarStore</title>
+</head>
+
+<body>
+    <div class="navbar-top">
+        <div class="navbar-top-wrapper">
+            <div class="navbar-logo">
+                <a href="/" class="logo">
+                    <img src="./img/guitarstore.png" alt="Page logo">
+                </a>
+            </div>
+            <div class="navbar-right">
+                <div class="search-box">
+                    <input type="text" class="search-text" placeholder="What are You looking for?">
+                    <button class="search-btn" aria-label="Search">
+                    </button>
+                </div>
+                <a href="/cart" class="cart-btn">
+                    <span class="cart-counter">0</span>
+                </a>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="navbar-bottom">
+        <ul class="nav-categories">
+            <li class="nav-category">
+                <a href="/all?category=acoustic" class="category-menu">ACOUSTIC</a>
+
+                <ul class="dropdown-content">
+                    <li class="col-17 categories-brands">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=6%20string">6 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=12%20string">12 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=left%20handed">Left handed</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=resonator">Resonator</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=6%20string">6 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=12%20string">12 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=left%20handed">Left handed</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&type=resonator">Resonator</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=yamaha">Yamaha</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=fender">Fender</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=epiphone">Epiphone</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=yamaha">Yamaha</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=fender">Fender</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=acoustic&brand=epiphone">Epiphone</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-1-3 recommended recommended-acoustic">
+
+                    </li>
+
+                    <li class="col-1 view-all"><a href="/all?category=acoustic">View All Acoustic</a></li>
+                </ul>
+
+
+            </li>
+            <li class="nav-category">
+                <a href="/all?category=electric" class="category-menu">ELECTRIC</a>
+                <ul class="dropdown-content">
+                    <li class="col-17 categories-brands">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=electric&type=3/4">3/4 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=7%20string">7 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=8%20string">8 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=left%20handed">Left handed</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=electric&type=3/4">3/4 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=7%20string">7 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=8%20string">8 string</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&type=left%20handed">Left handed</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=electric&brand=squier">Squier</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=solar%20guitars">Solar Guitars</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=strandberg">Strandberg</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=jackson">Jackson</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=electric&brand=squier">Squier</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=solar%20guitars">Solar Guitars</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=strandberg">Strandberg</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=electric&brand=jackson">Jackson</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-1-3 recommended recommended-electric">
+
+                    </li>
+
+                    <li class="col-1 view-all"><a href="/all?category=electric">View All Electric</a></li>
+                </ul>
+            </li>
+            <li class="nav-category">
+                <a href="/all?category=classical" class="category-menu">CLASSICAL</a>
+                <ul class="dropdown-content">
+                    <li class="col-17 categories-brands">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=classical&type=1/2">1/2 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=3/4">3/4 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=full%20size">Full size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=silent">Silent</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=classical&type=1/2">1/2 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=3/4">3/4 size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=full%20size">Full size</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&type=silent">Silent</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=classical&brand=admira">Admira</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=fender">Fender</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=martin">Martin</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=yamaha">Yamaha</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=classical&brand=admira">Admira</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=fender">Fender</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=martin">Martin</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=classical&brand=yamaha">Yamaha</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-1-3 recommended recommended-classical">
+
+                    </li>
+
+                    <li class="col-1 view-all"><a href="/all?category=classical">View All Classical</a></li>
+                </ul>
+            </li>
+            <li class="nav-category">
+                <a href="/all?category=accessories" class="category-menu">ACCESSORIES</a>
+                <ul class="dropdown-content">
+                    <li class="col-17 categories-brands">
+                        <h3>Categories</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=accessories&type=picks">Picks</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=capo">Capo</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=tuner">Tuner</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=harmonica">Harmonica</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=accessories&type=picks">Picks</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=capo">Capo</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=tuner">Tuner</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&type=harmonica">Harmonica</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3>Brands</h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=dunlop">Dunlop</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=boss">BOSS</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=hohner">Hohner</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-17 categories-brands">
+                        <h3><br></h3>
+                        <ul>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=dunlop">Dunlop</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=boss">BOSS</a></p>
+                            </li>
+                            <li>
+                                <p><a href="/all?category=accessories&brand=hohner">Hohner</a></p>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li class="col-1-3 recommended recommended-accessories">
+
+                    </li>
+
+                    <li class="col-1 view-all"><a href="/all?category=accessories">View All Accessories</a></li>
+                </ul>
+            </li>
+
+            <li class="nav-category">
+                <a href="/all?sale=true" class="category-menu">SALE</a>
+            </li>
+            <li class="nav-category">
+                <button class="category-menu contact">CONTACT</button>
+            </li>
+        </ul>
+
+
+        <div class="menu">
+            <button class="menu-btn">
+                <img src="./img/menu.png" alt="Navigation Menu">
+            </button>
+            <div class="search-box">
+                <input type="text" class="search-text">
+                <button class="search-btn" aria-label="Search"></button>
+            </div>
+            <a href="/cart" class="cart-btn">
+                <span class="cart-counter">0</span>
+            </a>
+        </div>
+    </div>
+
+
+
+    <div class="product-details">
+        <div class="details-upper">
+            <div class="details-left">
+                <div class="product-info">
+
+                </div>
+                <div class="focused-picture">
+                    <div class="zoom-cover"><img class="zoom-icon" src="./img/zoom.png" alt=""></div>
+                </div>
+                <div class="details-gallery">
+
+                </div>
+            </div>
+            <div class="details-right">
+                <h1 class="details-product-price"></h1>
+                <h2 class="in-stock"></h2>
+                <p class="cart-quantity">
+                    <input type="number" value="1" min="1" class="product-counter" aria-label="Quantity"><button
+                        class="add-to-cart-btn">Add
+                        To Cart</button>
+                </p>
+                <div class="purchase-sidebar">
+                    <div class="finance-options">
+                        <h4>
+                            <img class="calendar-icon" src="./img/calendar.webp" alt=""> Buy Now, Pay 2023
+                        </h4>
+                        <div class="checks">
+                            <span><img src="./img/check.webp" alt="">No Deposit</span>
+                            <span><img src="./img/check.webp" alt="">Pay nothing for up to 12 months</span>
+                            <span><img src="./img/check.webp" alt="">Apply in minutes</span>
+                        </div>
+                        <button class="apply-now-btn">Apply Now</button>
+                    </div>
+                    <hr>
+                    <p class="delivery-info"><img class="delivery-icon" src="./img/delivery.png" alt="">Delivery in 2
+                        days!</p>
+                    <hr>
+                    <p class="payment-methods">
+                        <img src="./img/payment-methods/blik-logo.webp" alt="">
+                        <img src="./img/payment-methods/mastercard-logo.webp" alt="">
+                        <img src="./img/payment-methods/visa-logo.webp" alt="">
+                        <img src="./img/payment-methods/gpay-logo.webp" alt="">
+                        <img src="./img/payment-methods/payu-logo.webp" alt="">
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="description">
+            <h2>Description</h2>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+                ex
+                ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu
+                fugiat
+                nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt
+                mollit
+                anim id est laborum.
+            </p>
+        </div>
+    </div>
+
+
+    <div class="banner-section">
+        <h1>You may also like</h1>
+        <div class="banner-products">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="about-section">
+            <div class="about-logo">
+                <a href="/" class="logo">
+                    <img src="./img/guitarstore.png" alt="">
+                </a>
+            </div>
+            <div class="about-info">
+                <p>About Company</p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit, quae earum asperiores quia ut
+                    adipisci
+                    repellat est consequatur reiciendis, dolorum sunt atque. Nostrum officiis dolorem enim placeat nemo
+                    cum
+                    laudantium.
+                </p>
+                <p>Support email - help@guitarstore.com, custommersupport@guitarstore.com</p>
+                <p>Telephone - 123 123 123, 000 222 333</p>
+                <div class="about-links">
+                    <div class="left">
+                        <a href="">Terms & Services</a>
+                        <a href="">Privacy Policy</a>
+                    </div>
+                    <div class="right">
+                        <a href="">Facebook</a>
+                        <a href="">Instagram</a>
+                        <a href="">Twitter</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="mobile-nav">
+        <ul class="mobile-nav-options">
+            <li><a href="/">Home</a></li>
+            <li><a href="/all">All products</a></li>
+            <li>
+                <a href="/all?category=acoustic">Acoustic</a>
+                <button class="expand-filter-btn"></button>
+                <ul class="mobile-nav-options-filters">
+                    <li>
+                        <a href="#">Categories</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=acoustic&type=6%20string">6 string</a></li>
+                            <li><a href="/all?category=acoustic&type=12%20string">12 string</a></li>
+                            <li><a href="/all?category=acoustic&type=left%20handed">Left handed</a></li>
+                            <li><a href="/all?category=acoustic&type=resonator">Resonator</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=acoustic&brand=yamaha">Yamaha</a></li>
+                            <li><a href="/all?category=acoustic&brand=fender">Fender</a></li>
+                            <li><a href="/all?category=acoustic&brand=epiphone">Epiphone</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/all?category=electric">Electric</a>
+                <button class="expand-filter-btn"></button>
+                <ul class="mobile-nav-options-filters">
+                    <li>
+                        <a href="#">Categories</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=electric&type=3/4">3/4 size</a></li>
+                            <li><a href="/all?category=electric&type=7%20string">7 string</a></li>
+                            <li><a href="/all?category=electric&type=8%20string">8 string</a></li>
+                            <li><a href="/all?category=electric&type=left%20handed">Left handed</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=electric&brand=squier">Squier</a></li>
+                            <li><a href="/all?category=electric&brand=solar%20guitars">Solar Guitars</a></li>
+                            <li><a href="/all?category=electric&brand=strandberg">Strandberg</a></li>
+                            <li><a href="/all?category=electric&brand=jackson">Jackson</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/all?category=classical">Classical</a>
+                <button class="expand-filter-btn"></button>
+                <ul class="mobile-nav-options-filters">
+                    <li>
+                        <a href="#">Categories</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=classical&type=1/2">1/2 size</a></li>
+                            <li><a href="/all?category=classical&type=3/4">3/4 size</a></li>
+                            <li><a href="/all?category=classical&type=full%20size">Full size</a></li>
+                            <li><a href="/all?category=classical&type=silent">Silent</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=classical&brand=admira">Admira</a></li>
+                            <li><a href="/all?category=classical&brand=fender">Fender</a></li>
+                            <li><a href="/all?category=classical&brand=martin">Martin</a></li>
+                            <li><a href="/all?category=classical&brand=yamaha">Yamaha</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li>
+                <a href="/all?category=accessories">Accessories</a>
+                <button class="expand-filter-btn"></button>
+                <ul class="mobile-nav-options-filters">
+                    <li>
+                        <a href="#">Categories</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=accessories&type=picks">Picks</a></li>
+                            <li><a href="/all?category=accessories&type=capo">Capo</a></li>
+                            <li><a href="/all?category=accessories&type=tuner">Tuner</a></li>
+                            <li><a href="/all?category=accessories&type=harmonica">Harmonica</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">Brands</a>
+                        <button class="expand-filter-btn"></button>
+                        <ul class="mobile-nav-options-filters subfilters">
+                            <li><a href="/all?category=accessories&brand=dunlop">Dunlop</a></li>
+                            <li><a href="/all?category=accessories&brand=boss">BOSS</a></li>
+                            <li><a href="/all?category=accessories&brand=hohner">Hohner</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li><a href="/all?sale=true">Sale</a></li>
+        </ul>
+    </div>
+
+    <script src="./js/default.js"></script>
+    <script src="./js/product-details.js"></script>
+</body>
+
+</html>
